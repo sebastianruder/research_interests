@@ -1,0 +1,37 @@
+\documentclass[11pt]{article}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{multirow}
+\usepackage{amssymb}
+
+\usepackage{array}
+
+\title{Research Interests}
+
+\author{Sebastian Ruder}
+
+\begin{document}
+
+\maketitle
+
+My current work focuses mostly on developing new Deep Learning-based algorithms for sentiment analysis. Generally, I am interested in all aspects of Deep Learning for NLP. Concretely, I am most excited about the following three research directions:
+
+\section{Representation learning}
+
+As much of learning depends on finding the best mental images or representations for concepts, representation learning is a field that tremendously interests me. \cite{Mikolov2013d} and \cite{Le2014a} have both shaped my initial interest in this domain. In this context, I am currently working on leveraging bytes to pre-train cross-lingual word embeddings and on generating better aspect representations for aspect-based sentiment analysis. While I am interested in creating better (cross-lingual) word and document representations, for future work, I would like to find better ways to represent other forms of latent information, e.g. entities, discourse structures, speakers, world knowledge, etc. Inspiring works to this effect are \cite{Gupta2015} who show that word embeddings partially encode entity attributes; \cite{Li2016a} who encode the persona and addressee of conversational agents; and \cite{Iyyer2016} who represent relationships between book characters. For other latent factors such as emotions, psychological research has produced well-established representation taxonomies; finding ways to ground an expressive model in such existing mental models or leveraging these to inform an architecture despite the lack of quality data would be another interesting challenge.
+
+\section{Compositionality}
+
+Much of language is compositional and finding ways to incorporate this compositionality into the network structure is another direction that interests me. Similar to \cite{Kotzias2015}, I am currently working on a hierarchical LSTM to capture the inter-dependence of sentences within a review. I am not only interested in how sentences can be composed into documents \cite{Li2015d}, but also how other linguistic units such as different argumentative structures, e.g. the premise and hypothesis in entailment \cite{Rocktaschel2015}, the components of a summary, or the different markers of a conversation interact with each other. Ultimately, I am interested in developing models that compose knowledge and that are able to derive high-level concepts from basic assumptions, be it generalizing from examples, learning abstractions from individual characteristics, or learning high-level programs from sub-programs \cite{Reed2015}.
+
+\section{Dialogue and conversation}
+
+With the advent of the sequence-to-sequence framework, even classic NLP problems have been framed as sequence generation tasks, e.g. parsing \cite{Vinyals2014a} and NER \cite{Gillick2015}. Generally, much of human learning is inherently sequential and is based on dialogue. To this effect, I am interested in finding better ways to model sequences that lend themselves to modeling dialogue and conversation. Representing dialogue in order to better capture the opponent's intent and address her needs would be the primary goal; conversely, leveraging the dialogue-inherent feedback \cite{Mikolov2015,Weston2016} in order to enable the agent to learn is another research direction that profoundly intrigues me.
+
+\bibliography{research_interests}
+\bibliographystyle{apalike}
+
+\end{document}
